@@ -1,0 +1,42 @@
+{
+  "name": "se_project_express",
+  "version": "13.0.0",
+  "description": "MERN Stack project sprint 13 project 13 node express",
+  "main": "app.js",
+  "scripts": {
+    "test": "hello world",
+    "clean_local": "rm -rf node_modules && rm -rf .generated && rm -rf target && rm -rf package-lock.json",
+    "prebuild": "npm run clean_local && npm install",
+    "permitScripts": "chmod +x scripts/*",
+    "nvmSelect": "npm run permitScripts && sh scripts/nvmSelect.sh",
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zimmermanjosh/se_project_express.git"
+  },
+  "keywords": [
+    "SE",
+    "Project",
+    "express"
+  ],
+  "author": "JBZ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^6.6.1",
+    "npm-check-updates": "^17.1.3",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.31.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^2.8.8"
+  }
+}
